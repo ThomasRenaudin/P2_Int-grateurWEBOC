@@ -107,10 +107,72 @@ p {
 
 
 /***************/
+
+
+.membresFondateurs {
+  position: relative;
+  max-width: 100%;
+  background: linear-gradient(80.28deg, #E44444 0%, #CD487C 77.13%);
+}
+
+.foundersHeader {
+	font-family : 'Archivo';
+	font-weight: 900;
+	font-size: 35px;
+	line-height: 38px;
+	padding-bottom: 40px;
+	margin-top: 59px;
+  position: absolute;
+	color: #FFFFFF;
+}
+
+.founderImages {
+	margin-top : 200px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom : 80px;
+}
+
+.founderImage {
+  flex: 0 0 30%; /* Chaque image prends 30% du container */
+}
+
+.founderImage img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+.founderName {
+	font-family: 'Archivo';
+  color: white;
+  font-size: 25px;
+  text-align: center;
+	margin: 15px 0;
+  font-weight: bold;
+}
+
+.founderSpecialty {
+	font-family: 'Archivo';
+  color: white;
+  font-size: 16px;
+  text-align: center;
+  margin: 0;
+}
+
+.classInformation {
+background: #EDEDED;
+padding-bottom : 0;
+}
+
+
 .directionRow {
 	display: flex;
 	flex-direction: row;
 	justify-content: center;
+	margin-bottom : 0;
+
 }
 
 .directionColumn {
@@ -121,6 +183,7 @@ p {
 
 .sectionLinearGradientBackground {
 	background: linear-gradient(to right, var(--main-color), var(--second-color));
+	margin-bottom : 0;
 }
 
 .whiteContentSection h2,
@@ -141,12 +204,13 @@ p {
 .button {
 	margin: 20px 0px;
 	padding: 28px 40px;
-
+	radius : 38px;
+	gap : 10px;
 	background-color: white;
 
 	border-style: solid;
 	border-width: 2px;
-	border-radius: 5px;
+	border-radius: 38px;
 
 	box-sizing: border-box;
 
@@ -156,11 +220,17 @@ p {
 	font-size: 16px;
 	line-height: 17px;
 
+
+
 	display: flex;
 	align-items: center;
 	justify-content: center;
 
 	text-decoration: none;
+}
+
+.buttonRed {
+	color: #E44444;
 }
 
 .buttonDrakGreyColor {
@@ -182,7 +252,8 @@ p {
 	border-radius: 39px;
 }
 
-.buttonHighlight:hover {
+.button:hover {
 	font-weight: 800;
 	border-width: 3px;
+	color : rgba(205, 72, 123, 1);
 }
